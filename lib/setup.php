@@ -12,10 +12,30 @@
 namespace KnowTheCode\Developers\Lib;
 
 add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme' );
+
+/**
+ * Setup child theme.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
 function setup_child_theme() {
 
-	//* Set Localization (do not remove)
 	load_child_theme_textdomain( 'CHILD_TEXT_DOMAIN', apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/languages', 'CHILD_TEXT_DOMAIN' ) );
+
+	adds_theme_supports();
+	adds_new_image_sizes();
+}
+
+/**
+ * Adds theme supports to the site.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function adds_theme_supports() {
 
 	//* Add HTML5 markup structure
 	add_theme_support( 'html5', array( 'caption', 'comment-form', 'comment-list', 'gallery', 'search-form' ) );
@@ -57,6 +77,16 @@ function setup_child_theme() {
 		'secondary' => __( 'Footer Menu', 'CHILD_TEXT_DOMAIN' )
 	) );
 
-	//* Add Image Sizes
+}
+
+/**
+ * Adds new image sizes.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function adds_new_image_sizes() {
+
 	add_image_size( 'featured-image', 720, 400, true );
 }
