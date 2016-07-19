@@ -74,7 +74,6 @@ function adds_theme_supports() {
 	foreach( $config as $feature => $args ) {
 		add_theme_support( $feature, $args );
 	}
-
 }
 
 /**
@@ -85,6 +84,17 @@ function adds_theme_supports() {
  * @return void
  */
 function adds_new_image_sizes() {
+	$config = array(
+		'featured-image' => array(
+			'width'     => 720,
+			'height'    => 400,
+			'crop'      => true,
+		),
+	);
 
-	add_image_size( 'featured-image', 720, 400, true );
+	foreach( $config as $name => $args ) {
+		$crop = array_key_exists( 'crop', $args ) ? $args['crop'] : false;
+
+		add_image_size( $name, $args['width'], $args['height'], $crop );
+	}
 }
