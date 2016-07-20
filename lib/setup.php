@@ -19,7 +19,7 @@ add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme' );
  * @return void
  */
 function setup_child_theme() {
-	load_child_theme_textdomain( 'CHILD_TEXT_DOMAIN', apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/languages', 'CHILD_TEXT_DOMAIN' ) );
+	load_child_theme_textdomain( CHILD_TEXT_DOMAIN, apply_filters( 'child_theme_textdomain', CHILD_THEME_DIR . '/languages', CHILD_TEXT_DOMAIN ) );
 
 	adds_theme_supports();
 	adds_new_image_sizes();
@@ -66,7 +66,7 @@ function adds_theme_supports() {
 		),
 	);
 
-	foreach( $config as $feature => $args ) {
+	foreach ( $config as $feature => $args ) {
 		add_theme_support( $feature, $args );
 	}
 }
@@ -96,15 +96,13 @@ function adds_new_image_sizes() {
 
 add_filter( 'genesis_theme_settings_defaults', __NAMESPACE__ . '\set_theme_settings_defaults' );
 /**
- * Set theme settings default.
+ * Set theme settings defaults.
  *
  * @since 1.0.0
  *
- * @param  array $defaults
+ * @param array $defaults
  *
  * @return array
- *
- *
  */
 function set_theme_settings_defaults( array $defaults ) {
 	$config = get_theme_settings_defaults();
@@ -115,9 +113,8 @@ function set_theme_settings_defaults( array $defaults ) {
 }
 
 add_action( 'after_switch_theme', __NAMESPACE__ . '\update_theme_settings_defaults' );
-
 /**
- * Sets the theme setting defaults
+ * Sets the theme setting defaults.
  *
  * @since 1.0.0
  *
@@ -129,6 +126,7 @@ function update_theme_settings_defaults() {
 	if ( function_exists( 'genesis_update_settings' ) ) {
 		genesis_update_settings( $config );
 	}
+
 	update_option( 'posts_per_page', $config['blog_cat_num'] );
 }
 

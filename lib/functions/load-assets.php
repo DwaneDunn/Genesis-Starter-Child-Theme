@@ -12,7 +12,7 @@ namespace KnowTheCode\Developers\Functions;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 /**
- * Enqueue Scripts and Styles
+ * Enqueue Scripts and Styles.
  *
  * @since 1.0.0
  *
@@ -30,5 +30,4 @@ function enqueue_assets() {
 		'subMenu'  => __( 'Menu', CHILD_TEXT_DOMAIN ),
 	);
 	wp_localize_script( CHILD_TEXT_DOMAIN . '-responsive-menu', 'developersL10n', $localized_script_args );
-
 }

@@ -11,12 +11,11 @@
 namespace KnowTheCode\Developers\Functions;
 
 /**
- * Load non admin files
+ * Loads non admin files
  *
  * @since 1.0.0
  *
  * @return void
- *
  */
 function load_nonadmin_files() {
 	$filenames = array(
@@ -26,20 +25,21 @@ function load_nonadmin_files() {
 		'functions/formatting.php',
 		'functions/load-assets.php',
 		'functions/markup.php',
-//		'structure/archive.php',
+//	'structure/archive.php',
 		'structure/comments.php',
-//		'structure/footer.php',
-//		'structure/header.php',
+//	'structure/footer.php',
+//	'structure/header.php',
 		'structure/menu.php',
 		'structure/post.php',
-//		'structure/sidebar.php',
+//	'structure/sidebar.php',
 	);
 
 	load_specified_files( $filenames );
 }
+
 add_action( 'admin_init', __NAMESPACE__ . '\load_admin_files' );
 /**
- * Load admin files
+ * Load admin files.
  *
  * @since 1.0.0
  *

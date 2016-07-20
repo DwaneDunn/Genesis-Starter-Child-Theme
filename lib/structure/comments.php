@@ -9,6 +9,7 @@
  * @license      GNU General Public License 2.0+
  */
 namespace KnowTheCode\Developers\Lib\Structure;
+
 add_filter( 'genesis_comment_list_args', __NAMESPACE__ . '\setup_comments_gravatar' );
 /**
  * Modify size of the Gravatar in the entry comments
@@ -18,7 +19,6 @@ add_filter( 'genesis_comment_list_args', __NAMESPACE__ . '\setup_comments_gravat
  * @param array $args
  *
  * @return mixed
- *
  */
 function setup_comments_gravatar( array $args ) {
 

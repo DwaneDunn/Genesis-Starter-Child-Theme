@@ -48,7 +48,7 @@ function get_default_accent_color() {
 }
 
 /**
- * Calculate Color Contrast
+ * Calculate Color Contrast.
  *
  * @since 1.0.0
  *
@@ -71,7 +71,7 @@ function calculate_color_contrast( $color ) {
 }
 
 /**
- * Calculate Color Brightness
+ * Calculate Color Brightness.
  *
  * @since 1.0.0
  *

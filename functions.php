@@ -8,12 +8,11 @@
  * @link         http://dwanedunn.com
  * @license      GNU General Public License 2.0+
  */
-
 namespace KnowTheCode\Developers;
 
 include_once( 'lib/init.php' );
 
 include_once( 'lib/functions/autoload.php' );
 
-//* Start the Genesis Framework.
+// Start the Genesis framework.
 include_once( get_template_directory() . '/lib/init.php' );

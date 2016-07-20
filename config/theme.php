@@ -8,10 +8,8 @@
  * @link         http://dwanedunn.com
  * @license      GNU General Public License 2.0+
  */
-
 namespace KnowTheCode\Developers\Config;
 
 return array(
-
 
 );
