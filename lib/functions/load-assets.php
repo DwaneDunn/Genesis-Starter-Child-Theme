@@ -11,7 +11,6 @@
 namespace KnowTheCode\Developers\Functions;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
-
 /**
  * Enqueue Scripts and Styles
  *

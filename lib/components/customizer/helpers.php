@@ -8,7 +8,6 @@
  * @link         http://dwanedunn.com
  * @license      GNU General Public License 2.0+
  */
-
 namespace KnowTheCode\Developers\Lib\Components\Customizer;
 
 /**
@@ -19,7 +18,6 @@ namespace KnowTheCode\Developers\Lib\Components\Customizer;
  * @return string
  */
 function get_settings_prefix() {
-
 	return 'developers';
 }
 

@@ -10,7 +10,6 @@
  */
 namespace KnowTheCode\Developers\Lib\Structure;
 
-//*
 add_filter( 'genesis_author_box_gravatar_size', __NAMESPACE__ . '\setup_author_box_gravatar_size' );
 
 /**

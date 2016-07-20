@@ -1,6 +1,6 @@
 <?php
 /**
- * Description
+ * File autoloader
  *
  * @package     KnowTheCode\Developers\Functions
  * @since       1.0.0
@@ -8,7 +8,6 @@
  * @link         http://dwanedunn.com
  * @license      GNU General Public License 2.0+
  */
-
 namespace KnowTheCode\Developers\Functions;
 
 /**
@@ -39,14 +38,12 @@ function load_nonadmin_files() {
 	load_specified_files( $filenames );
 }
 add_action( 'admin_init', __NAMESPACE__ . '\load_admin_files' );
-
 /**
  * Load admin files
  *
  * @since 1.0.0
  *
  * @return void
- *
  */
 function load_admin_files() {
 	$filenames = array(
@@ -63,6 +60,8 @@ function load_admin_files() {
  *
  * @param array $filenames
  * @param string $folder_root
+ *
+ * @return void
  */
 function load_specified_files( array $filenames, $folder_root = '' ) {
 	$folder_root = $folder_root ?: CHILD_THEME_DIR . '/lib/';

@@ -8,7 +8,6 @@
  * @link         http://dwanedunn.com
  * @license      GNU General Public License 2.0+
  */
-
 namespace KnowTheCode\Developers\Lib\Components\Customizer;
 
 use WP_Customize_Color_Control;
