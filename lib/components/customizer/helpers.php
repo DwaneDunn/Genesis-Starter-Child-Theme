@@ -11,12 +11,17 @@
 
 namespace KnowTheCode\Developers\Lib\Components\Customizer;
 
+/**
+ * Get the settings prefix.
+ *
+ * @since 1.0.0
+ *
+ * @return string
+ */
 function get_settings_prefix() {
 
 	return 'developers';
-
 }
-
 
 /**
  * Get default link color for Customizer.
