@@ -13,10 +13,22 @@ $body__backgroundColor: #eee;
 
 
 $nav__LinkColor: #333;
+
+//
+// Navigation Colors
+//**************************************
+
 $primaryNav__BackgroundColor: $white;
 $primaryNav__LinkColor: $nav__LinkColor;
 $secNav__BackgroundColor: $white;
 $secNav__LinkColor: $nav__LinkColor;
+$jsNav__BackgroundColor: $white;
+$jsNav__HoverColor: $black;
+$jsNav__FocusColor: #c3251d;
+
+//
+// Navigation Colors
+//**************************************
 
 $siteHeader__BackgroundColor: $white;
 $siteFooter__BackgroundColor: $white;
