@@ -3,17 +3,14 @@ $black: #000;
 
 
 $base__color: #333;
-
-
 $link__color: #c3251d;
 $link__hoverColor: #333;
-
 $body__backgroundColor: #eee;
 
 //
 // Header Colors
 //
-
+$siteHeader__BackgroundColor: $white;
 $siteTitle__LinkColor: #333;
 
 //
@@ -28,11 +25,9 @@ $primaryNav__BackgroundColor: $white;
 $primaryNav__BorderColor: #eee;
 $primaryNav__LinkColor: $nav__LinkColor;
 
-
 $secNav__BackgroundColor: $white;
 $secNav__BorderColor: #eee;
 $secNav__LinkColor: $nav__LinkColor;
-
 
 $jsNav__BackgroundColor: $white;
 $jsNav__HoverColor: $black;
@@ -46,12 +41,12 @@ $archivePagination__Color: #333;
 $archivePagination__HoverBackgroundColor: #c3251d;
 $archivePagination__HoverColor: #white;
 
-
-
 //
-// Navigation Colors
+// Footer Colors
 //**************************************
 
-$siteHeader__BackgroundColor: $white;
 $siteFooter__BackgroundColor: $white;
+
+$siteFooter__BorderColor: #eee;
+
 $footerWidgets__BackgroundColor: $white;
