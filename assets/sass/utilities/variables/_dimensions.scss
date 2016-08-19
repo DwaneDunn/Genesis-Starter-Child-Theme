@@ -1,6 +1,40 @@
 //
-//Dimension Variables
+//  Dimension Variables
 //=============================
+$baseWidth: 1280;
+$gutter: 40px;
+
+//
+//  Max Widths
+//==============================
+$maxWidth: $baseWidth + px;
+$maxWidth__LargerScreen: 1140px;
+$maxWidth__LargeScreen: 960px;
+$maxWidth__MediumScreen: 800px;
+$maxWidth__LandingPage: 800px;
+
+//
+//  Content Widths
+//==============================
+$content__Width: 880px;
+// $content__Width: $baseWidth * 0.6875 + px;
+
+$content__LargerScreenWidth: 800px;
+$content__LargeScreenWidth: 620px;
+$contentBothSideBars__Width: 660px;
+$contentBothSideBars__LargerScreenWidth: 580px;
+$contentBothSideBars__LargeScreenWidth: 400px;
+
+$primarySidebar__Width: 360px;
+// $primarySidebar__Width: $maxWidth - $content_Width - $gutter;
+// $primarySidebar__Width: $baseWidth * 0.28125 + px;
+$primarySidebar__LargerScreenWidth: 300px;
+$secSidebar__Width: 180px;
+
+$contentSidebarWrap__Width: 1060px;
+$contentSidebarWrap__LargerScreenWidth: 920px;
+$contentSidebarWrap__LargeScreenWidth: 740px;
+
 
 // Header Module
 $titleArea_Width: 300px;
@@ -10,4 +44,4 @@ $headerRight__Width_LargeScreen: 620px;
 
 // Footer Module
 $footerWidgets__Width: 380px;
-$footerWidgets__Width_LargeScreen: 340px;
+$footerWidgets__Width_LargeScreen: 300px;
