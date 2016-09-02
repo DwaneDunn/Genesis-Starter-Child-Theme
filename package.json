@@ -1,0 +1,25 @@
+{
+  "name": "developers",
+  "version": "1.0.0",
+  "description": "This is a developer-friendly starter child theme for the Genesis theming framework.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DwaneDunn/Genesis-Starter-Child-Theme.git"
+  },
+  "keywords": [],
+  "author": "Dwane-Dunn",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/DwaneDunn/Genesis-Starter-Child-Theme/issues"
+  },
+  "homepage": "https://github.com/DwaneDunn/Genesis-Starter-Child-Theme#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2"
+  }
+}
